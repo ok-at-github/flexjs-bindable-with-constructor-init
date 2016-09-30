@@ -1,6 +1,6 @@
 package 
 {
-	// Setting it bindable results "TypeError: Cannot read property 'value' of undefined"
+	// Setting it bindable results in "TypeError: Cannot read property 'value' of undefined"
 	// [Bindable]
 	public class BindableWithConstructorInitEnum
 	{
