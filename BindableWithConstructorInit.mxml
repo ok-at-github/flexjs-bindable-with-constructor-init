@@ -1,0 +1,23 @@
+<js:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+				xmlns:local="*"
+				xmlns:js="library://ns.apache.org/flexjs/basic"
+				applicationComplete="onApplicationComplete()" >
+	
+	<fx:Script>
+		<![CDATA[
+			private function onApplicationComplete():void {
+				enumValue.text = BindableWithConstructorInitEnum.STATIC_INIT.value;
+			}
+		]]>
+	</fx:Script>
+	
+	<js:valuesImpl>
+		<js:SimpleCSSValuesImpl />
+	</js:valuesImpl>
+	<js:initialView>
+		<js:View>
+			<js:Label text="Output enum value:" x="10" y="10" width="120" />
+			<js:Label id="enumValue" x="130" y="10" width="100" />
+		</js:View>
+	</js:initialView>
+</js:Application>
